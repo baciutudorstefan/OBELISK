@@ -1,17 +1,87 @@
+::-webkit-scrollbar {
+  transform: translateY(-10px);
+  width: 1px;
+}
+
+/* ::-webkit-scrollbar-track {
+
+} */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .App{
-  width: 100vw;
-  height: 100vh;
+  
   background-color: #151E25;
   color: #FFFFFF;
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .main{
   width: 100vw;
   height: 100vh;
   text-align: center;
+   overflow-x: hidden;
 }
 
 .bg{
   border: 1px solid red;
   
 }
+
+
+@media screen and  (max-width: 800px) {
+      
+    .App{
+      
+      transform: rotate(360deg) translateX(0vh);
+      height: 100vh !important;
+      width: 100vw !important; 
+      /* overflow-y: unset;
+      overflow-x: scroll;*/
+      transform-origin: top bottom; 
+    }
+
+    .wrapper{
+      flex-direction: column;
+      transform: rotate(360deg) translateY(0vh);
+      height: auto !important;
+      width: 100vw !important;
+      /* overflow-y: unset;
+      overflow-x: scroll; */
+      transform-origin: none !important;
+    }
+
+    *{
+      /* overflow-y:initial; */
+    }
+
+    .main{
+      background-color: blue;
+    }
+}
+

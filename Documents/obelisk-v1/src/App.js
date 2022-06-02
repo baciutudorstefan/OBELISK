@@ -1,19 +1,22 @@
-import logo from './logo.svg';
+import { useContext } from "react";
 import './App.css';
-import HorizontalScroll from 'react-scroll-horizontal';
+// import HorizontalScroll from 'react-scroll-horizontal';
 
 function App() {
 
-  const child   = { width: `30em`, height: `100%`}
 
+  
 
   return (
     <div className="App">
-      <HorizontalScroll 
-      config={{stiffness: 400, damping: 100}} 
-      >
+       
+       
+      {/* <HorizontalScroll 
+      config={{stiffness: 400, damping: 100}}> */}
+      <div className="wrapper">
         <div  className="main bg">
             <h1>Obelisk 1</h1>
+            
         </div>
         <div  className="main bg">
             <h1>Obelisk 2</h1>
@@ -24,7 +27,8 @@ function App() {
         <div  className="main bg">
             <h1>Obelisk 4</h1>
         </div>
-        </HorizontalScroll>
+        </div>
+        {/* </HorizontalScroll> */}
     </div>
   );
 }
