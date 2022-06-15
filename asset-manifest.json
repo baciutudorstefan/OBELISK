@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/OBELISK/static/css/main.30331fd7.css",
-    "main.js": "/OBELISK/static/js/main.c62ef73c.js",
+    "main.css": "/OBELISK/static/css/main.d70f3e3b.css",
+    "main.js": "/OBELISK/static/js/main.1809a6fa.js",
     "static/js/787.d047d9da.chunk.js": "/OBELISK/static/js/787.d047d9da.chunk.js",
     "index.html": "/OBELISK/index.html",
-    "main.30331fd7.css.map": "/OBELISK/static/css/main.30331fd7.css.map",
-    "main.c62ef73c.js.map": "/OBELISK/static/js/main.c62ef73c.js.map",
+    "main.d70f3e3b.css.map": "/OBELISK/static/css/main.d70f3e3b.css.map",
+    "main.1809a6fa.js.map": "/OBELISK/static/js/main.1809a6fa.js.map",
     "787.d047d9da.chunk.js.map": "/OBELISK/static/js/787.d047d9da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30331fd7.css",
-    "static/js/main.c62ef73c.js"
+    "static/css/main.d70f3e3b.css",
+    "static/js/main.1809a6fa.js"
   ]
 }
